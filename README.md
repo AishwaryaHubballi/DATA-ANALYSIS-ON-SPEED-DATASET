@@ -11,7 +11,8 @@ latitude, longitude,timestamp, speed, speedLimit, functionalClass (a description
     It represents mean, std deviations, quantiles,min and max values.
 5.  Finding the number of NULL VALUES in each attribute 
     These null values might sometimes influence while training model. If so, such records need to be dropped or null values have to be         replaced appropriately.
-6.  State is a Categorical Data. Its unique values with count are extracted.
+6.  Unique values in 'IsHighway', 'FunctionalClass', 'State' are extracted.
+    State is a Categorical Data. Its unique values with count are extracted.
     PIE CHART is used to visulise the percentage of each unique value presnt in State attribute.
 7.  DATA CONVERSION:Longitude Values are negative. Converted to positive.
     Because it decreases the Euclidean distance in a dimensional feature space wrt to other attributes.
@@ -29,5 +30,9 @@ latitude, longitude,timestamp, speed, speedLimit, functionalClass (a description
 13. INDEXING : An appropriate attribute can be considered as index value for each record.
 14. AVERAGE SPEED OF DRIVER : can be found by group-by driver_id and finding the mean for each driver_id.This can be used to analyse the 
     driver's driving and the speed that he maintains on an average.
-15. AVERAGE SPEED OF VEHICLE : can be found by group-by vehicle_id and finding the mean for each vehicle_id. Average speed of vehicle can     be analysed.
-(.ipynb file is attached that contains codes and results for the above)
+15. AVERAGE SPEED OF VEHICLE : can be found by group-by vehicle_id and finding the mean for each vehicle_id. Average speed of vehicle
+    can be analysed.
+16. SCATTER PLOTS: for 'LATITUDE vs SPEEDLIMIT ' and 'LONGITUDE vs SPEEDLIMIT' is plotted.
+    They reprsent the scattering of data in 2-dimensional feature space.
+    
+#### (.ipynb file is attached that contains codes and results for the above)
